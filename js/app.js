@@ -4,14 +4,14 @@
 
     app.controller('apiController', ['$http', function($http) {
 
-        var engine = this;
+        var app = this;
 
-        engine.searchFood = function() {
+        app.makeCall = function() {
 
             var Query = document.getElementById("input-id").value;
 
             $http({
-                    url: "",
+                    url: "Put your url here",
                     dataType: "jsonp",
                     jsonp: "callback"
                 })
