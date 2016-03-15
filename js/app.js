@@ -11,7 +11,7 @@
             var Query = document.getElementById("input-id").value;
 
             $http({
-                    url: "Put your url here",
+                    url: Query,
                     dataType: "jsonp",
                     jsonp: "callback"
                 })
